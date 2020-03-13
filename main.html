@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<html>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dice Rollingの扱い方</title>
+    </head>
+
+    
+
+    <body>
+
+        <div style="color:#7b7b7b;position:fixed;right:5px;bottom:5px;
+        font-size:10px;text-shadow:0px 0px 4px black;z-index:-5;
+        ">
+            th3_n00b13
+        </div>
+
+        <div style="background:transparent;font-family:sans-serif;letter-spacing:5px;font-size:40px;
+        max-width:720px;margin:50px auto 10px;color:white;padding:3px;
+        border-left:solid 5px white;border-bottom:solid 1px white;">
+            Dice Rollingのコマンド一覧
+        </div>
+
+        <div class="desc1">
+            Dice Rollingは主にダイスのロールができます。<br>
+            それ以外にも簡易的ながら様々な機能があります。
+        </div>
+        <div style="margin:40px"></div>
+        <details open>
+            <summary>コマンド</summary>
+            これらのコマンドはhelpコマンドを使う、メンションをすることでも一部を見ることができます。
+            <br>この一覧はPrefixがありませんが、サーバーの場合Prefixを付けないと動作しません。
+            <br>Prefixを知りたい場合、Botに対しメンションすることでヘルプの後にそのサーバーのPrefixが送信されます。
+            <div style="font-size:10px;">引数の表記が[引数]となっている場合、入力しなくてもかまいません。</div>
+            <details>
+                <summary>Utility</summary>
+                <table border="0">
+                    <tr>
+                        <th>コマンド</th>
+                        <th>説明</th>
+                        <th>例</th>
+                    </tr>
+                    <tr>
+                        <td>dice 数式</td>
+                        <td>ダイスを振ります。一部のLuaの数式の関数を扱うことが可能です。</td>
+                        <td>dice 2d6+4</td>
+                    </tr>
+                    <tr>
+                        <td>stat 数式</td>
+                        <td>ダイスを振った際の平均値、最大値、最小値を計算します。</td>
+                        <td>stat 2d6+4</td>
+                    </tr>
+                    <tr>
+                        <td>secret 数式</td>
+                        <td>ダイスを振ります。<b>チャンネルではなくDMに送られます。</b></td>
+                        <td>secret 2d6+4</td>
+                    </tr>
+                    <tr>
+                        <td>screen</td>
+                        <td>画面共有URLを生成します。<br>コマンド実行者がコマンド実行時にいるボイスチャットのURLです。</td>
+                        <td>screen</td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                    -->
+                </table>
+            </details>
+            <div style="margin:5px"></div>
+            <details>
+                <summary>COCTRPG</summary>
+                <table border="0">
+                    <tr>
+                        <th>コマンド</th>
+                        <th>説明</th>
+                        <th>例</th>
+                    </tr>
+                    <tr>
+                        <td>d100 [数式]</td>
+                        <td>下方判定のD100ロールをします。クリティカル判定等もされます。
+                            値を入力しない場合00~99の値をランダムに出します。
+                            <br><b>出目が00だと問答無用でファンブルになります。</b>
+                        </td>
+                        <td>d100 50</td>
+                    </tr>
+                    <tr>
+                        <td>s100 [数式]</td>
+                        <td>d100と同じですが、<b>結果はDMに送られます。</b></td>
+                        <td>s100 50</td>
+                    </tr>
+                    <tr>
+                        <td>cthucharsheet</td>
+                        <td>クトゥルフ神話TRPGのキャラクターシート作成時に使用できます。
+                            全能力値をすべてロールします。
+                            <br>一応それにより求められる技能等も計算されます。
+                        </td>
+                        <td>cthucharsheet</td>
+                    </tr>
+                    <!--
+                    <tr>
+                        <td>A</td>
+                        <td>B</td>
+                        <td>C</td>
+                    </tr>
+                    -->
+                </table>
+            </details>
+        </details>
+    </body>
+</html>
