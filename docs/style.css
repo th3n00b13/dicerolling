@@ -54,6 +54,9 @@ details > summary:hover{
     color:white;
     background-color:var(--col0);
 }
+summary::-webkit-details-marker{
+    color:transparent;
+}
 
 table{
     color:var(--col1);
