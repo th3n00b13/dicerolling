@@ -1,0 +1,3 @@
+# Dice Rolling Help
+___
+It's about Dice Rolling , but FULLY JAPANESE BECAUSE im japanese and this bot is for japanese...sorry...
